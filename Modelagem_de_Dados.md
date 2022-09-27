@@ -44,3 +44,34 @@ Existem três tipos principais, estando no topo o programador (usuário que escr
 
 ## Persistência
 Consiste no armazenamento confiável e coerente das informações em um sistema de armazenamento de dados. Os dados persistem quando são aceitos pelo SGBD para a inserção no banco. Assim, somente será possível removê-los do banco, posteriormente, por meio de alguma solicitação explícita ao SGBD.
+
+## Categoria de BD
+
+### Centralizada
+Arquitetura em um servidor em que as aplicações ou os clientes podem acessar o banco de dados. Logo, a responsabilidade pela capacidade de armazenamento e resposta será assumida. Para tal modelo, é necessário alto poder de processamento do servidor e um ótimo desempenho do SGBD.
+
+### Descentralizada
+Há mais de um servidor para o banco de dados, possibilitando que eles sejam descentralizados. Tem-se, então, garantia de autonomia local e auxílio na comunicação, que, por exemplo, pode ser melhor distribuída entre as aplicações que utilizam tabelas específicas.
+
+### Distribuída
+Arquitetura em que os dados estão compartilhados em muitos computadores ou servidores, com utilizações ou sincronismo para se certificar da integridade desses dados nos locais em que se encontram.
+
+### Replicada 
+Arquitetura em que o banco de dados é copiado para muitos computadores ou servidores, como em uma metodologia de espelhamento. Todos os bancos são idênticos e, conforme há alterações no primeiro banco, os demais são alterados em cascata.
+Aliás, esse tipo de arquitetura garante a segurança das informações. No caso de haver falhas em algum host, outro poderá assumir seu lugar, visto que os dados são idênticos.
+
+## Modelo Conceitual
+
+Utiliza a análise de requisitos por base, sendo um grupo de hipóteses que leva em conta o mundo real, indicando as regras de negócio do sistema. Desse modo, consiste no detalhamento de alto nível, voltado a entender e descrever todos os detalhes de uma organização.
+Este detalhamento das informações de negócio, por sua vez, é guardado no banco de dados. 
+
+### Objetivo
+
+- Implementar sistema com informações coerentes
+- Relacionamentos
+- Propriedades
+- Objetos
+
+# Modelo Lógico
+
+Cria um modelo lógico somente quando a etapa anterior - Modelo Conceitual - for concluída. Desse modo, apresenta questões referente às possibilidades de abordagem tecnológicas do SGBD, para criar a lógica dos relacionamentos que há no modelo conceitual.
